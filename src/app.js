@@ -1,19 +1,18 @@
-
 App ={
 
     loading: true,
     contracts: {},
 
     load: async () => {
+        const loader = $('#loader')
+        loader.show()
         console.log("app loaded")
         await App.loadWeb3()
         await App.load_acc()
-        const loader = $('#loader')
-        loader.hide()
         await App.load_contract()
+        loader.hide()
         await App.render()
         //await App.render_records(105)
-
     },
 
     loadWeb3: async () => {
@@ -63,46 +62,58 @@ App ={
       },
 
       render: async() => {
+        
         $("#account").html(App.account)
         const content = $('#content')
         content.show()
       },
 
       render_records: async(id) =>{
-          const cnt = await App.records.count()
-          const $opTemplate = $(".taskTemplate")
 
+          const $temp = $(".taskTemplate")
+          const $opTemplate = $(".taskTemplate")
+          $temp.removeClass("taskTemplate")
+
+          const cnt = await App.records.count()
+        
           for(var i=0;i<cnt;i++){
+
             const rec = await App.records.data(i)
             const recId = rec[0].toNumber()
             const recContent = rec[1]
-            //put it to html
             
+            //put it to html
             console.log(id)
             if(id == recId){
+
                 const $newopTemplate = $opTemplate.clone()
                 $newopTemplate.find('.content').html(recContent)
-                $newopTemplate.find('input')
-                .prop('name', recId).prop("Data" , recContent).prop("checked" , false)
 
                 $('#taskList').append($newopTemplate)
-                console.log(i)
+                console.log("a")
             
                 $newopTemplate.show()
             }
-
-            
           }
       },
 
-      take_userid: async() => {
-        
+      take_data: async() => {
+          //$('#taskList').remove(".taskTemplate")
           const id = $("#user_id").val()
+          const data = $("#record").val()
           
-          await App.render_records(id)   
-                 
+          if(data == ""){
+          await App.render_records(id)
+          }
+          else{
+            await App.records.create_record(id , data)
+            swal("Success!" , "Data Added" , "success")
+            .then((value) => {
+              window.location.reload()
+            })
+            
+          }       
       }
-
 }
 
 $(() => {

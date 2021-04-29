@@ -48,6 +48,24 @@
       "signature": "constructor"
     },
     {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "record",
+          "type": "string"
+        }
+      ],
+      "name": "rec_created",
+      "type": "event",
+      "signature": "0x66944fc92ff07ac5cbcaf9ab2cdd08a7c34cf3afc945cf9778f6e8c1e4b4f944"
+    },
+    {
       "constant": false,
       "inputs": [
         {
@@ -67,20 +85,20 @@
       "signature": "0x4de8cf7b"
     }
   ],
-  "bytecode": "0x60806040526000805534801561001457600080fd5b506100656000546040805190810160405280601681526020017f5468652047656e6973697320626c6f636b20646174610000000000000000000081525061006a640100000000026401000000009004565b610155565b604080518082018252838152602080820184815260008054815260018084529490208351815590518051939491936100aa939285019291909101906100ba565b5050600080546001019055505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100fb57805160ff1916838001178555610128565b82800160010185558215610128579182015b8281111561012857825182559160200191906001019061010d565b50610134929150610138565b5090565b61015291905b80821115610134576000815560010161013e565b90565b6103aa806101646000396000f3fe6080604052600436106100565763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306661abd811461005b5780634de8cf7b14610082578063f0ba84401461013e575b600080fd5b34801561006757600080fd5b506100706101e7565b60408051918252519081900360200190f35b34801561008e57600080fd5b5061013c600480360360408110156100a557600080fd5b813591908101906040810160208201356401000000008111156100c757600080fd5b8201836020820111156100d957600080fd5b803590602001918460018302840111640100000000831117156100fb57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506101ed945050505050565b005b34801561014a57600080fd5b506101686004803603602081101561016157600080fd5b503561023d565b6040518083815260200180602001828103825283818151815260200191508051906020019080838360005b838110156101ab578181015183820152602001610193565b50505050905090810190601f1680156101d85780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b60005481565b6040805180820182528381526020808201848152600080548152600180845294902083518155905180519394919361022d939285019291909101906102e3565b5050600080546001019055505050565b600160208181526000928352604092839020805481840180548651600296821615610100026000190190911695909504601f810185900485028601850190965285855290949193929091908301828280156102d95780601f106102ae576101008083540402835291602001916102d9565b820191906000526020600020905b8154815290600101906020018083116102bc57829003601f168201915b5050505050905082565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061032457805160ff1916838001178555610351565b82800160010185558215610351579182015b82811115610351578251825591602001919060010190610336565b5061035d929150610361565b5090565b61037b91905b8082111561035d5760008155600101610367565b9056fea165627a7a72305820bc99587298490a83e9e4354c7a142bd12bd5e8e62263d883880ce3d571222d580029",
-  "deployedBytecode": "0x6080604052600436106100565763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306661abd811461005b5780634de8cf7b14610082578063f0ba84401461013e575b600080fd5b34801561006757600080fd5b506100706101e7565b60408051918252519081900360200190f35b34801561008e57600080fd5b5061013c600480360360408110156100a557600080fd5b813591908101906040810160208201356401000000008111156100c757600080fd5b8201836020820111156100d957600080fd5b803590602001918460018302840111640100000000831117156100fb57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506101ed945050505050565b005b34801561014a57600080fd5b506101686004803603602081101561016157600080fd5b503561023d565b6040518083815260200180602001828103825283818151815260200191508051906020019080838360005b838110156101ab578181015183820152602001610193565b50505050905090810190601f1680156101d85780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b60005481565b6040805180820182528381526020808201848152600080548152600180845294902083518155905180519394919361022d939285019291909101906102e3565b5050600080546001019055505050565b600160208181526000928352604092839020805481840180548651600296821615610100026000190190911695909504601f810185900485028601850190965285855290949193929091908301828280156102d95780601f106102ae576101008083540402835291602001916102d9565b820191906000526020600020905b8154815290600101906020018083116102bc57829003601f168201915b5050505050905082565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061032457805160ff1916838001178555610351565b82800160010185558215610351579182015b82811115610351578251825591602001919060010190610336565b5061035d929150610361565b5090565b61037b91905b8082111561035d5760008155600101610367565b9056fea165627a7a72305820bc99587298490a83e9e4354c7a142bd12bd5e8e62263d883880ce3d571222d580029",
-  "sourceMap": "27:414:0:-;;;72:1;52:21;;201:86;8:9:-1;5:2;;;30:1;27;20:12;5:2;201:86:0;232:47;246:5;;232:47;;;;;;;;;;;;;;;;;;:13;;;:47;;;:::i;:::-;27:414;;299:130;385:18;;;;;;;;;;;;;;;;;;-1:-1:-1;376:5:0;;371:11;;:4;:11;;;;;;:32;;;;;;;;385:18;;371:11;;:32;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;414:5:0;:7;;;;;;-1:-1:-1;;;299:130:0:o;27:414::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:414:0;;;-1:-1:-1;27:414:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "27:414:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;52:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;52:21:0;;;;;;;;;;;;;;;;;;;;299:130;;8:9:-1;5:2;;;30:1;27;20:12;5:2;299:130:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;299:130:0;;;;;;;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;299:130:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;299:130:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;299:130:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;299:130:0;;-1:-1:-1;299:130:0;;-1:-1:-1;;;;;299:130:0;;;155:33;;8:9:-1;5:2;;;30:1;27;20:12;5:2;155:33:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;155:33:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;155:33:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;52:21;;;;:::o;299:130::-;385:18;;;;;;;;;;;;;;;;;;-1:-1:-1;376:5:0;;371:11;;:4;:11;;;;;;:32;;;;;;;;385:18;;371:11;;:32;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;414:5:0;:7;;;;;;-1:-1:-1;;;299:130:0:o;155:33::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;155:33:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;27:414::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:414:0;;;-1:-1:-1;27:414:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract MediChain{\r\n    uint public count = 0;\r\n\r\n    struct Data{\r\n        uint id;\r\n        string record;\r\n    }\r\n    \r\n    mapping(uint => Data) public data;\r\n    \r\n    constructor() public{\r\n        create_record(count , \"The Genisis block data\");\r\n    }\r\n    \r\n    function create_record(uint id , string memory _record)public{\r\n        data[count] = Data(id , _record);\r\n        count++;\r\n    }   \r\n    \r\n}",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b506100656000546040805190810160405280601681526020017f5468652047656e6973697320626c6f636b20646174610000000000000000000081525061006a640100000000026401000000009004565b6101fb565b604080518082018252838152602080820184815260008054815260018084529490208351815590518051939491936100aa93928501929190910190610160565b50506000805460010180825560408051828152602080820183815287519383019390935286517f66944fc92ff07ac5cbcaf9ab2cdd08a7c34cf3afc945cf9778f6e8c1e4b4f94496509394879492939260608501928601918190849084905b83811015610121578181015183820152602001610109565b50505050905090810190601f16801561014e5780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101a157805160ff19168380011785556101ce565b828001600101855582156101ce579182015b828111156101ce5782518255916020019190600101906101b3565b506101da9291506101de565b5090565b6101f891905b808211156101da57600081556001016101e4565b90565b6104508061020a6000396000f3fe6080604052600436106100565763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306661abd811461005b5780634de8cf7b14610082578063f0ba84401461013e575b600080fd5b34801561006757600080fd5b506100706101e7565b60408051918252519081900360200190f35b34801561008e57600080fd5b5061013c600480360360408110156100a557600080fd5b813591908101906040810160208201356401000000008111156100c757600080fd5b8201836020820111156100d957600080fd5b803590602001918460018302840111640100000000831117156100fb57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506101ed945050505050565b005b34801561014a57600080fd5b506101686004803603602081101561016157600080fd5b50356102e3565b6040518083815260200180602001828103825283818151815260200191508051906020019080838360005b838110156101ab578181015183820152602001610193565b50505050905090810190601f1680156101d85780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b60005481565b6040805180820182528381526020808201848152600080548152600180845294902083518155905180519394919361022d93928501929190910190610389565b50506000805460010180825560408051828152602080820183815287519383019390935286517f66944fc92ff07ac5cbcaf9ab2cdd08a7c34cf3afc945cf9778f6e8c1e4b4f94496509394879492939260608501928601918190849084905b838110156102a457818101518382015260200161028c565b50505050905090810190601f1680156102d15780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b600160208181526000928352604092839020805481840180548651600296821615610100026000190190911695909504601f8101859004850286018501909652858552909491939290919083018282801561037f5780601f106103545761010080835404028352916020019161037f565b820191906000526020600020905b81548152906001019060200180831161036257829003601f168201915b5050505050905082565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103ca57805160ff19168380011785556103f7565b828001600101855582156103f7579182015b828111156103f75782518255916020019190600101906103dc565b50610403929150610407565b5090565b61042191905b80821115610403576000815560010161040d565b9056fea165627a7a7230582006cc0727bb0884baa1172357a8f3c0b95ae7df004cdb0a96a92362bccfc09e630029",
+  "deployedBytecode": "0x6080604052600436106100565763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306661abd811461005b5780634de8cf7b14610082578063f0ba84401461013e575b600080fd5b34801561006757600080fd5b506100706101e7565b60408051918252519081900360200190f35b34801561008e57600080fd5b5061013c600480360360408110156100a557600080fd5b813591908101906040810160208201356401000000008111156100c757600080fd5b8201836020820111156100d957600080fd5b803590602001918460018302840111640100000000831117156100fb57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506101ed945050505050565b005b34801561014a57600080fd5b506101686004803603602081101561016157600080fd5b50356102e3565b6040518083815260200180602001828103825283818151815260200191508051906020019080838360005b838110156101ab578181015183820152602001610193565b50505050905090810190601f1680156101d85780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b60005481565b6040805180820182528381526020808201848152600080548152600180845294902083518155905180519394919361022d93928501929190910190610389565b50506000805460010180825560408051828152602080820183815287519383019390935286517f66944fc92ff07ac5cbcaf9ab2cdd08a7c34cf3afc945cf9778f6e8c1e4b4f94496509394879492939260608501928601918190849084905b838110156102a457818101518382015260200161028c565b50505050905090810190601f1680156102d15780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b600160208181526000928352604092839020805481840180548651600296821615610100026000190190911695909504601f8101859004850286018501909652858552909491939290919083018282801561037f5780601f106103545761010080835404028352916020019161037f565b820191906000526020600020905b81548152906001019060200180831161036257829003601f168201915b5050505050905082565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103ca57805160ff19168380011785556103f7565b828001600101855582156103f7579182015b828111156103f75782518255916020019190600101906103dc565b50610403929150610407565b5090565b61042191905b80821115610403576000815560010161040d565b9056fea165627a7a7230582006cc0727bb0884baa1172357a8f3c0b95ae7df004cdb0a96a92362bccfc09e630029",
+  "sourceMap": "27:530:0:-;;;72:1;52:21;;274:86;8:9:-1;5:2;;;30:1;27;20:12;5:2;274:86:0;305:47;319:5;;305:47;;;;;;;;;;;;;;;;;;:13;;;:47;;;:::i;:::-;27:530;;371:174;457:18;;;;;;;;;;;;;;;;;;-1:-1:-1;448:5:0;;443:11;;:4;:11;;;;;;:32;;;;;;;;457:18;;443:11;;:32;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;486:5:0;:7;;;;;;;509:28;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;486:7:0;;529;;509:28;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;509:28:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;371:174;;:::o;27:530::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:530:0;;;-1:-1:-1;27:530:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "27:530:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;52:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;52:21:0;;;;;;;;;;;;;;;;;;;;371:174;;8:9:-1;5:2;;;30:1;27;20:12;5:2;371:174:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;371:174:0;;;;;;;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;371:174:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;371:174:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;371:174:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;371:174:0;;-1:-1:-1;371:174:0;;-1:-1:-1;;;;;371:174:0;;;155:33;;8:9:-1;5:2;;;30:1;27;20:12;5:2;155:33:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;155:33:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;155:33:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;52:21;;;;:::o;371:174::-;457:18;;;;;;;;;;;;;;;;;;-1:-1:-1;448:5:0;;443:11;;:4;:11;;;;;;:32;;;;;;;;457:18;;443:11;;:32;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;486:5:0;:7;;;;;;;509:28;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;486:7:0;;529;;509:28;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;509:28:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;371:174;;:::o;155:33::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;155:33:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;27:530::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:530:0;;;-1:-1:-1;27:530:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract MediChain{\r\n    uint public count = 0;\r\n\r\n    struct Data{\r\n        uint id;\r\n        string record;\r\n    }\r\n    \r\n    mapping(uint => Data) public data;\r\n    \r\n    event rec_created(\r\n        uint id,\r\n        string record\r\n    );\r\n    constructor() public{\r\n        create_record(count , \"The Genisis block data\");\r\n    }\r\n   \r\n    function create_record(uint id , string memory _record)public{\r\n        data[count] = Data(id , _record);\r\n        count++;\r\n        emit rec_created(count , _record);\r\n    }   \r\n    \r\n}",
   "sourcePath": "D:/Code/Truffle/medichain/contracts/MediChain.sol",
   "ast": {
     "absolutePath": "/D/Code/Truffle/medichain/contracts/MediChain.sol",
     "exportedSymbols": {
       "MediChain": [
-        43
+        54
       ]
     },
-    "id": 44,
+    "id": 55,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -100,9 +118,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 43,
+        "id": 54,
         "linearizedBaseContracts": [
-          43
+          54
         ],
         "name": "MediChain",
         "nodeType": "ContractDefinition",
@@ -112,7 +130,7 @@
             "id": 4,
             "name": "count",
             "nodeType": "VariableDeclaration",
-            "scope": 43,
+            "scope": 54,
             "src": "52:21:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -209,7 +227,7 @@
             ],
             "name": "Data",
             "nodeType": "StructDefinition",
-            "scope": 43,
+            "scope": 54,
             "src": "82:61:0",
             "visibility": "public"
           },
@@ -218,7 +236,7 @@
             "id": 13,
             "name": "data",
             "nodeType": "VariableDeclaration",
-            "scope": 43,
+            "scope": 54,
             "src": "155:33:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -261,10 +279,79 @@
             "visibility": "public"
           },
           {
+            "anonymous": false,
+            "documentation": null,
+            "id": 19,
+            "name": "rec_created",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 18,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15,
+                  "indexed": false,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19,
+                  "src": "229:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "229:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 17,
+                  "indexed": false,
+                  "name": "record",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19,
+                  "src": "247:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 16,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "247:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "218:49:0"
+            },
+            "src": "201:67:0"
+          },
+          {
             "body": {
-              "id": 21,
+              "id": 27,
               "nodeType": "Block",
-              "src": "221:66:0",
+              "src": "294:66:0",
               "statements": [
                 {
                   "expression": {
@@ -272,12 +359,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 17,
+                        "id": 23,
                         "name": "count",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4,
-                        "src": "246:5:0",
+                        "src": "319:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -286,14 +373,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "5468652047656e6973697320626c6f636b2064617461",
-                        "id": 18,
+                        "id": 24,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "254:24:0",
+                        "src": "327:24:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_d1df22391d79471312363aac29712b78f13669cab5218303a3528b811eb67b37",
@@ -313,18 +400,18 @@
                           "typeString": "literal_string \"The Genisis block data\""
                         }
                       ],
-                      "id": 16,
+                      "id": 22,
                       "name": "create_record",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 42,
-                      "src": "232:13:0",
+                      "referencedDeclaration": 53,
+                      "src": "305:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (uint256,string memory)"
                       }
                     },
-                    "id": 19,
+                    "id": 25,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -332,53 +419,53 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "232:47:0",
+                    "src": "305:47:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 20,
+                  "id": 26,
                   "nodeType": "ExpressionStatement",
-                  "src": "232:47:0"
+                  "src": "305:47:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 22,
+            "id": 28,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 14,
+              "id": 20,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "212:2:0"
+              "src": "285:2:0"
             },
             "returnParameters": {
-              "id": 15,
+              "id": 21,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "221:0:0"
+              "src": "294:0:0"
             },
-            "scope": 43,
-            "src": "201:86:0",
+            "scope": 54,
+            "src": "274:86:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 41,
+              "id": 52,
               "nodeType": "Block",
-              "src": "360:69:0",
+              "src": "432:113:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 36,
+                    "id": 42,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -387,26 +474,26 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 29,
+                        "id": 35,
                         "name": "data",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 13,
-                        "src": "371:4:0",
+                        "src": "443:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Data_$9_storage_$",
                           "typeString": "mapping(uint256 => struct MediChain.Data storage ref)"
                         }
                       },
-                      "id": 31,
+                      "id": 37,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 30,
+                        "id": 36,
                         "name": "count",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4,
-                        "src": "376:5:0",
+                        "src": "448:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -417,7 +504,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "371:11:0",
+                      "src": "443:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Data_$9_storage",
                         "typeString": "struct MediChain.Data storage ref"
@@ -430,12 +517,12 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 33,
+                          "id": 39,
                           "name": "id",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 24,
-                          "src": "390:2:0",
+                          "referencedDeclaration": 30,
+                          "src": "462:2:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -443,12 +530,12 @@
                         },
                         {
                           "argumentTypes": null,
-                          "id": 34,
+                          "id": 40,
                           "name": "_record",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 26,
-                          "src": "395:7:0",
+                          "referencedDeclaration": 32,
+                          "src": "467:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
                             "typeString": "string memory"
@@ -466,18 +553,18 @@
                             "typeString": "string memory"
                           }
                         ],
-                        "id": 32,
+                        "id": 38,
                         "name": "Data",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 9,
-                        "src": "385:4:0",
+                        "src": "457:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_Data_$9_storage_ptr_$",
                           "typeString": "type(struct MediChain.Data storage pointer)"
                         }
                       },
-                      "id": 35,
+                      "id": 41,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -485,26 +572,26 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "385:18:0",
+                      "src": "457:18:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Data_$9_memory",
                         "typeString": "struct MediChain.Data memory"
                       }
                     },
-                    "src": "371:32:0",
+                    "src": "443:32:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Data_$9_storage",
                       "typeString": "struct MediChain.Data storage ref"
                     }
                   },
-                  "id": 37,
+                  "id": 43,
                   "nodeType": "ExpressionStatement",
-                  "src": "371:32:0"
+                  "src": "443:32:0"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 39,
+                    "id": 45,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -512,15 +599,15 @@
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
-                    "src": "414:7:0",
+                    "src": "486:7:0",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 38,
+                      "id": 44,
                       "name": "count",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "414:5:0",
+                      "src": "486:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -531,30 +618,101 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 40,
+                  "id": 46,
                   "nodeType": "ExpressionStatement",
-                  "src": "414:7:0"
+                  "src": "486:7:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 48,
+                        "name": "count",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4,
+                        "src": "521:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 49,
+                        "name": "_record",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 32,
+                        "src": "529:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 47,
+                      "name": "rec_created",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19,
+                      "src": "509:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (uint256,string memory)"
+                      }
+                    },
+                    "id": 50,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "509:28:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 51,
+                  "nodeType": "EmitStatement",
+                  "src": "504:33:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 42,
+            "id": 53,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "create_record",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 27,
+              "id": 33,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 24,
+                  "id": 30,
                   "name": "id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 42,
-                  "src": "322:7:0",
+                  "scope": 53,
+                  "src": "394:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -562,10 +720,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 23,
+                    "id": 29,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "322:4:0",
+                    "src": "394:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -576,11 +734,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 26,
+                  "id": 32,
                   "name": "_record",
                   "nodeType": "VariableDeclaration",
-                  "scope": 42,
-                  "src": "332:21:0",
+                  "scope": 53,
+                  "src": "404:21:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -588,10 +746,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 25,
+                    "id": 31,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "332:6:0",
+                    "src": "404:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -601,35 +759,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "321:33:0"
+              "src": "393:33:0"
             },
             "returnParameters": {
-              "id": 28,
+              "id": 34,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "360:0:0"
+              "src": "432:0:0"
             },
-            "scope": 43,
-            "src": "299:130:0",
+            "scope": 54,
+            "src": "371:174:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 44,
-        "src": "27:414:0"
+        "scope": 55,
+        "src": "27:530:0"
       }
     ],
-    "src": "0:441:0"
+    "src": "0:557:0"
   },
   "legacyAST": {
     "absolutePath": "/D/Code/Truffle/medichain/contracts/MediChain.sol",
     "exportedSymbols": {
       "MediChain": [
-        43
+        54
       ]
     },
-    "id": 44,
+    "id": 55,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -649,9 +807,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 43,
+        "id": 54,
         "linearizedBaseContracts": [
-          43
+          54
         ],
         "name": "MediChain",
         "nodeType": "ContractDefinition",
@@ -661,7 +819,7 @@
             "id": 4,
             "name": "count",
             "nodeType": "VariableDeclaration",
-            "scope": 43,
+            "scope": 54,
             "src": "52:21:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -758,7 +916,7 @@
             ],
             "name": "Data",
             "nodeType": "StructDefinition",
-            "scope": 43,
+            "scope": 54,
             "src": "82:61:0",
             "visibility": "public"
           },
@@ -767,7 +925,7 @@
             "id": 13,
             "name": "data",
             "nodeType": "VariableDeclaration",
-            "scope": 43,
+            "scope": 54,
             "src": "155:33:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -810,10 +968,79 @@
             "visibility": "public"
           },
           {
+            "anonymous": false,
+            "documentation": null,
+            "id": 19,
+            "name": "rec_created",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 18,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15,
+                  "indexed": false,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19,
+                  "src": "229:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "229:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 17,
+                  "indexed": false,
+                  "name": "record",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19,
+                  "src": "247:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 16,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "247:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "218:49:0"
+            },
+            "src": "201:67:0"
+          },
+          {
             "body": {
-              "id": 21,
+              "id": 27,
               "nodeType": "Block",
-              "src": "221:66:0",
+              "src": "294:66:0",
               "statements": [
                 {
                   "expression": {
@@ -821,12 +1048,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 17,
+                        "id": 23,
                         "name": "count",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4,
-                        "src": "246:5:0",
+                        "src": "319:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -835,14 +1062,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "5468652047656e6973697320626c6f636b2064617461",
-                        "id": 18,
+                        "id": 24,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "254:24:0",
+                        "src": "327:24:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_d1df22391d79471312363aac29712b78f13669cab5218303a3528b811eb67b37",
@@ -862,18 +1089,18 @@
                           "typeString": "literal_string \"The Genisis block data\""
                         }
                       ],
-                      "id": 16,
+                      "id": 22,
                       "name": "create_record",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 42,
-                      "src": "232:13:0",
+                      "referencedDeclaration": 53,
+                      "src": "305:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (uint256,string memory)"
                       }
                     },
-                    "id": 19,
+                    "id": 25,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -881,53 +1108,53 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "232:47:0",
+                    "src": "305:47:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 20,
+                  "id": 26,
                   "nodeType": "ExpressionStatement",
-                  "src": "232:47:0"
+                  "src": "305:47:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 22,
+            "id": 28,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 14,
+              "id": 20,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "212:2:0"
+              "src": "285:2:0"
             },
             "returnParameters": {
-              "id": 15,
+              "id": 21,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "221:0:0"
+              "src": "294:0:0"
             },
-            "scope": 43,
-            "src": "201:86:0",
+            "scope": 54,
+            "src": "274:86:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 41,
+              "id": 52,
               "nodeType": "Block",
-              "src": "360:69:0",
+              "src": "432:113:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 36,
+                    "id": 42,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -936,26 +1163,26 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 29,
+                        "id": 35,
                         "name": "data",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 13,
-                        "src": "371:4:0",
+                        "src": "443:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Data_$9_storage_$",
                           "typeString": "mapping(uint256 => struct MediChain.Data storage ref)"
                         }
                       },
-                      "id": 31,
+                      "id": 37,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 30,
+                        "id": 36,
                         "name": "count",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4,
-                        "src": "376:5:0",
+                        "src": "448:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -966,7 +1193,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "371:11:0",
+                      "src": "443:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Data_$9_storage",
                         "typeString": "struct MediChain.Data storage ref"
@@ -979,12 +1206,12 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 33,
+                          "id": 39,
                           "name": "id",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 24,
-                          "src": "390:2:0",
+                          "referencedDeclaration": 30,
+                          "src": "462:2:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -992,12 +1219,12 @@
                         },
                         {
                           "argumentTypes": null,
-                          "id": 34,
+                          "id": 40,
                           "name": "_record",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 26,
-                          "src": "395:7:0",
+                          "referencedDeclaration": 32,
+                          "src": "467:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
                             "typeString": "string memory"
@@ -1015,18 +1242,18 @@
                             "typeString": "string memory"
                           }
                         ],
-                        "id": 32,
+                        "id": 38,
                         "name": "Data",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 9,
-                        "src": "385:4:0",
+                        "src": "457:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_Data_$9_storage_ptr_$",
                           "typeString": "type(struct MediChain.Data storage pointer)"
                         }
                       },
-                      "id": 35,
+                      "id": 41,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1034,26 +1261,26 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "385:18:0",
+                      "src": "457:18:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Data_$9_memory",
                         "typeString": "struct MediChain.Data memory"
                       }
                     },
-                    "src": "371:32:0",
+                    "src": "443:32:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Data_$9_storage",
                       "typeString": "struct MediChain.Data storage ref"
                     }
                   },
-                  "id": 37,
+                  "id": 43,
                   "nodeType": "ExpressionStatement",
-                  "src": "371:32:0"
+                  "src": "443:32:0"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 39,
+                    "id": 45,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1061,15 +1288,15 @@
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
-                    "src": "414:7:0",
+                    "src": "486:7:0",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 38,
+                      "id": 44,
                       "name": "count",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "414:5:0",
+                      "src": "486:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1080,30 +1307,101 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 40,
+                  "id": 46,
                   "nodeType": "ExpressionStatement",
-                  "src": "414:7:0"
+                  "src": "486:7:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 48,
+                        "name": "count",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4,
+                        "src": "521:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 49,
+                        "name": "_record",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 32,
+                        "src": "529:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 47,
+                      "name": "rec_created",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19,
+                      "src": "509:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (uint256,string memory)"
+                      }
+                    },
+                    "id": 50,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "509:28:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 51,
+                  "nodeType": "EmitStatement",
+                  "src": "504:33:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 42,
+            "id": 53,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "create_record",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 27,
+              "id": 33,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 24,
+                  "id": 30,
                   "name": "id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 42,
-                  "src": "322:7:0",
+                  "scope": 53,
+                  "src": "394:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1111,10 +1409,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 23,
+                    "id": 29,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "322:4:0",
+                    "src": "394:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1125,11 +1423,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 26,
+                  "id": 32,
                   "name": "_record",
                   "nodeType": "VariableDeclaration",
-                  "scope": 42,
-                  "src": "332:21:0",
+                  "scope": 53,
+                  "src": "404:21:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1137,10 +1435,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 25,
+                    "id": 31,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "332:6:0",
+                    "src": "404:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1150,26 +1448,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "321:33:0"
+              "src": "393:33:0"
             },
             "returnParameters": {
-              "id": 28,
+              "id": 34,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "360:0:0"
+              "src": "432:0:0"
             },
-            "scope": 43,
-            "src": "299:130:0",
+            "scope": 54,
+            "src": "371:174:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 44,
-        "src": "27:414:0"
+        "scope": 55,
+        "src": "27:530:0"
       }
     ],
-    "src": "0:441:0"
+    "src": "0:557:0"
   },
   "compiler": {
     "name": "solc",
@@ -1177,14 +1475,33 @@
   },
   "networks": {
     "5777": {
-      "events": {},
+      "events": {
+        "0x66944fc92ff07ac5cbcaf9ab2cdd08a7c34cf3afc945cf9778f6e8c1e4b4f944": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "record",
+              "type": "string"
+            }
+          ],
+          "name": "rec_created",
+          "type": "event",
+          "signature": "0x66944fc92ff07ac5cbcaf9ab2cdd08a7c34cf3afc945cf9778f6e8c1e4b4f944"
+        }
+      },
       "links": {},
-      "address": "0x536e555596ae7767c2c6D738A4c58f5197C402d0",
-      "transactionHash": "0x2488205e343c0720916b88811b7790304030f9932f1f8395f75d4e80bc5f8609"
+      "address": "0x07df3F1d79eE9a96F4CD6C82378d869Cf260C33b",
+      "transactionHash": "0x46489f26392762a6847771bb9a52bafc0eb41bf6b89b14dc590c1769e9b0da14"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2021-04-29T16:20:31.520Z",
+  "updatedAt": "2021-04-29T20:51:09.912Z",
   "devdoc": {
     "methods": {}
   },

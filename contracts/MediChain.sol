@@ -10,6 +10,10 @@ contract MediChain{
     
     mapping(uint => Data) public data;
     
+    event rec_created(
+        uint id,
+        string record
+    );
     constructor() public{
         create_record(count , "The Genisis block data");
     }
@@ -17,6 +21,7 @@ contract MediChain{
     function create_record(uint id , string memory _record)public{
         data[count] = Data(id , _record);
         count++;
+        emit rec_created(count , _record);
     }   
     
 }
