@@ -13,7 +13,7 @@ contract MediChain{
     constructor() public{
         create_record(count , "The Genisis block data");
     }
-    
+   
     function create_record(uint id , string memory _record)public{
         data[count] = Data(id , _record);
         count++;

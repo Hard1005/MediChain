@@ -8,11 +8,8 @@ App ={
         console.log("app loaded")
         await App.loadWeb3()
         await App.load_acc()
-        const loader = $('#loader')
-        loader.hide()
         await App.load_contract()
         await App.render()
-        //await App.render_records(105)
 
     },
 
@@ -60,48 +57,52 @@ App ={
           
           App.records = await App.contracts.MediChain.deployed()
           console.log(App.records)
-      },
 
+      },
       render: async() => {
-        $("#account").html(App.account)
-        const content = $('#content')
-        content.show()
+          if(App.loading){
+              return
+          }
+          App.setLoading(true)
+          $("#account").html(App.account)
+          App.setLoading(false)
       },
 
-      render_records: async(id) =>{
+      render_records: async() =>{
           const cnt = await App.records.count()
-          const $opTemplate = $(".taskTemplate")
+          const $optemplate = $(".taskTemplate")
 
-          for(var i=0;i<cnt;i++){
+          for(var i=0;i<=cnt;i++){
             const rec = await App.records.data(i)
             const recId = rec[0].toNumber()
             const recContent = rec[1]
+            
             //put it to html
-            
-            console.log(id)
-            if(id == recId){
-                const $newopTemplate = $opTemplate.clone()
-                $newopTemplate.find('.content').html(recContent)
-                $newopTemplate.find('input')
-                .prop('name', recId).prop("Data" , recContent).prop("checked" , false)
-
-                $('#taskList').append($newopTemplate)
-                console.log(i)
-            
-                $newopTemplate.show()
-            }
-
-            
+            const $newTaskTemplate = $taskTemplate.clone()
+            $newTaskTemplate.find('.content').html(taskContent)
+            $newTaskTemplate.find('input')
+                      .prop('name', taskId)
+                      .prop('checked', taskCompleted)
+                      .on('click', App.toggleCompleted)
           }
+
+
       },
 
-      take_userid: async() => {
-        
-          const id = $("#user_id").val()
-          
-          await App.render_records(id)   
-                 
+      setLoading: (boolean) => {
+          App.loading = boolean
+          const loader = $("#loader")
+          const content = $("#content")
+          if(boolean){
+              loader.show()
+              content.hide()
+          }
+          else{
+              loader.hide()
+              content.show()
+          }
       }
+
 
 }
 

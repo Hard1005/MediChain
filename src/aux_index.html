@@ -57,9 +57,9 @@
             <p class="text-center">Loading...</p>
           </div>
           <div id="content">
-            <form onSubmit="App.take_userid(); return false;">
-              <input id="user_id" type="text" class="form-control" placeholder="Enter User ID" required>
-              <input type="submit" >
+            <form onSubmit="App.createTask(); return false;">
+              <input id="newTask" type="text" class="form-control" placeholder="Add task..." required>
+              <input type="submit" hidden="">
             </form>
             <ul id="taskList" class="list-unstyled">
               <div class="taskTemplate" class="checkbox" style="display: none">
@@ -77,7 +77,6 @@
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
     <script src="https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
