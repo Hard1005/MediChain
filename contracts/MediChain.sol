@@ -1,8 +1,8 @@
 pragma solidity ^0.5.0;
 
 contract MediChain{
-    
     uint public count = 0;
+
     struct Data{
         uint id;
         string record;
@@ -15,7 +15,6 @@ contract MediChain{
     }
     
     function create_record(uint id , string memory _record)public{
-        
         data[count] = Data(id , _record);
         count++;
     }   
